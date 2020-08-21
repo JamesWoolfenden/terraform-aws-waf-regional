@@ -30,6 +30,9 @@ module "waf-regional" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
 
 ## Providers
 
@@ -40,7 +43,7 @@ module "waf-regional" {
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
+|------|-------------|------|---------|:--------:|
 | ipset | Complex object to describe and populate ipset | `any` | n/a | yes |
 
 ## Outputs
