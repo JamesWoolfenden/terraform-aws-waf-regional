@@ -7,4 +7,6 @@ resource "aws_wafregional_rule" "ip_match" {
     negated = false
     type    = "IPMatch"
   }
+
+  tags = var.common_tags
 }
