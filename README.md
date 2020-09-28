@@ -29,7 +29,6 @@ module "waf-regional" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
-
 ## Requirements
 
 No requirements.
@@ -37,25 +36,25 @@ No requirements.
 ## Providers
 
 | Name | Version |
-| ---- | ------- |
-| aws  | n/a     |
+|------|---------|
+| aws | n/a |
 
 ## Inputs
 
-| Name        | Description                                   | Type     | Default               | Required |
-| ----------- | --------------------------------------------- | -------- | --------------------- | :------: |
-| acl_name    | n/a                                           | `string` | `"IPWhiteListWebACL"` |    no    |
-| common_tags | Implement the common_tags scheme              | `map`    | n/a                   |   yes    |
-| ipset       | Complex object to describe and populate ipset | `any`    | n/a                   |   yes    |
-| metric_name | n/a                                           | `string` | `"IPWhiteListWebACL"` |    no    |
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| acl\_name | n/a | `string` | `"IPWhiteListWebACL"` | no |
+| common\_tags | Implement the common\_tags scheme | `map` | n/a | yes |
+| ipset | Complex object to describe and populate ipset | `any` | n/a | yes |
+| metric\_name | n/a | `string` | `"IPWhiteListWebACL"` | no |
 
 ## Outputs
 
-| Name         | Description |
-| ------------ | ----------- |
-| ip_match     | n/a         |
-| ip_whitelist | n/a         |
-| ips          | n/a         |
+| Name | Description |
+|------|-------------|
+| ip\_match | n/a |
+| ip\_whitelist | n/a |
+| ips | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
