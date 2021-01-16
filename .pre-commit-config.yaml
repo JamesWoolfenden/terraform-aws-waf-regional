@@ -1,7 +1,7 @@
 ---
 # yamllint disable rule:line-length
 default_language_version:
-  python: python3
+  python: python3.8
 repos:
   - repo: git://github.com/pre-commit/pre-commit-hooks
     rev: v3.4.0
@@ -15,18 +15,13 @@ repos:
       - id: pretty-format-json
         args:
           - --autofix
+      - id: detect-aws-credentials
       - id: detect-private-key
   - repo: git://github.com/Lucas-C/pre-commit-hooks
     rev: v1.1.9
     hooks:
       - id: forbid-tabs
-        exclude_types:
-          - python
-          - javascript
-          - dtd
-          - markdown
-          - makefile
-          - xml
+        exclude_types: [python, javascript, dtd, markdown, makefile, xml]
         exclude: binary|\.bin$
   - repo: git://github.com/jameswoolfenden/pre-commit-shell
     rev: 0.0.2
