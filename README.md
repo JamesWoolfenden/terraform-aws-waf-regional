@@ -48,7 +48,7 @@ No requirements.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | acl\_name | n/a | `string` | `"IPWhiteListWebACL"` | no |
-| common\_tags | Implement the common\_tags scheme | `map` | n/a | yes |
+| common\_tags | Implement the common\_tags scheme | `map(any)` | n/a | yes |
 | ipset | Complex object to describe and populate ipset | `any` | n/a | yes |
 | metric\_name | n/a | `string` | `"IPWhiteListWebACL"` | no |
 

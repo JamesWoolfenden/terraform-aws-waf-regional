@@ -15,6 +15,6 @@ variable "metric_name" {
 }
 
 variable "common_tags" {
-  type        = map
+  type        = map(any)
   description = "Implement the common_tags scheme"
 }
