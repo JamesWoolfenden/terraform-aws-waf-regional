@@ -43,6 +43,18 @@ No requirements.
 |------|---------|
 | aws | n/a |
 
+## Modules
+
+No Modules.
+
+## Resources
+
+| Name |
+|------|
+| [aws_wafregional_ipset](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_ipset) |
+| [aws_wafregional_rule](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_rule) |
+| [aws_wafregional_web_acl](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_web_acl) |
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
@@ -59,7 +71,6 @@ No requirements.
 | ip\_match | n/a |
 | ip\_whitelist | n/a |
 | ips | n/a |
-
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
