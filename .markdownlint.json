@@ -1,6 +1,12 @@
 {
   "MD013": false,
-  "MD024": false,
+  "MD033": {
+    "allowed_elements": [
+      "br",
+      "pre",
+      "a"
+    ]
+  },
   "MD033": false,
   "MD041": false
 }
