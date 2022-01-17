@@ -51,6 +51,7 @@ No modules.
 
 | Name | Type |
 |------|------|
+| [aws_cloudwatch_log_group.wafexample](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group) | resource |
 | [aws_wafregional_ipset.ips](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_ipset) | resource |
 | [aws_wafregional_rule.ip_match](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_rule) | resource |
 | [aws_wafregional_web_acl.ip_whitelist](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_web_acl) | resource |
@@ -62,6 +63,7 @@ No modules.
 | <a name="input_acl_name"></a> [acl\_name](#input\_acl\_name) | n/a | `string` | `"IPWhiteListWebACL"` | no |
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | Implement the common\_tags scheme | `map(any)` | n/a | yes |
 | <a name="input_ipset"></a> [ipset](#input\_ipset) | Complex object to describe and populate ipset | `any` | n/a | yes |
+| <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | n/a | `any` | n/a | yes |
 | <a name="input_metric_name"></a> [metric\_name](#input\_metric\_name) | n/a | `string` | `"IPWhiteListWebACL"` | no |
 
 ## Outputs

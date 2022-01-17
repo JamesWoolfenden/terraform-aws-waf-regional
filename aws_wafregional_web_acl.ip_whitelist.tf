@@ -17,5 +17,10 @@ resource "aws_wafregional_web_acl" "ip_whitelist" {
     type     = "REGULAR"
   }
 
+  logging_configuration {
+    log_destination = aws_cloudwatch_log_group.wafexample.arn
+  }
+
+
   tags = var.common_tags
 }
