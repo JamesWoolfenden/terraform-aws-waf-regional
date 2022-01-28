@@ -33,15 +33,16 @@ module "waf-regional" {
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
 No requirements.
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
+| Name                                             | Version |
+| ------------------------------------------------ | ------- |
+| <a name="provider_aws"></a> [aws](#provider_aws) | n/a     |
 
 ## Modules
 
@@ -49,30 +50,31 @@ No modules.
 
 ## Resources
 
-| Name | Type |
-|------|------|
+| Name                                                                                                                                    | Type     |
+| --------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | [aws_cloudwatch_log_group.wafexample](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group) | resource |
-| [aws_wafregional_ipset.ips](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_ipset) | resource |
-| [aws_wafregional_rule.ip_match](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_rule) | resource |
+| [aws_wafregional_ipset.ips](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_ipset)              | resource |
+| [aws_wafregional_rule.ip_match](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_rule)           | resource |
 | [aws_wafregional_web_acl.ip_whitelist](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_web_acl) | resource |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| <a name="input_acl_name"></a> [acl\_name](#input\_acl\_name) | n/a | `string` | `"IPWhiteListWebACL"` | no |
-| <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | Implement the common\_tags scheme | `map(any)` | n/a | yes |
-| <a name="input_ipset"></a> [ipset](#input\_ipset) | Complex object to describe and populate ipset | `any` | n/a | yes |
-| <a name="input_kms_key_id"></a> [kms\_key\_id](#input\_kms\_key\_id) | n/a | `any` | n/a | yes |
-| <a name="input_metric_name"></a> [metric\_name](#input\_metric\_name) | n/a | `string` | `"IPWhiteListWebACL"` | no |
+| Name                                                               | Description                                   | Type       | Default               | Required |
+| ------------------------------------------------------------------ | --------------------------------------------- | ---------- | --------------------- | :------: |
+| <a name="input_acl_name"></a> [acl_name](#input_acl_name)          | n/a                                           | `string`   | `"IPWhiteListWebACL"` |    no    |
+| <a name="input_common_tags"></a> [common_tags](#input_common_tags) | Implement the common_tags scheme              | `map(any)` | n/a                   |   yes    |
+| <a name="input_ipset"></a> [ipset](#input_ipset)                   | Complex object to describe and populate ipset | `any`      | n/a                   |   yes    |
+| <a name="input_kms_key_id"></a> [kms_key_id](#input_kms_key_id)    | n/a                                           | `any`      | n/a                   |   yes    |
+| <a name="input_metric_name"></a> [metric_name](#input_metric_name) | n/a                                           | `string`   | `"IPWhiteListWebACL"` |    no    |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_ip_match"></a> [ip\_match](#output\_ip\_match) | n/a |
-| <a name="output_ip_whitelist"></a> [ip\_whitelist](#output\_ip\_whitelist) | n/a |
-| <a name="output_ips"></a> [ips](#output\_ips) | n/a |
+| Name                                                                    | Description |
+| ----------------------------------------------------------------------- | ----------- |
+| <a name="output_ip_match"></a> [ip_match](#output_ip_match)             | n/a         |
+| <a name="output_ip_whitelist"></a> [ip_whitelist](#output_ip_whitelist) | n/a         |
+| <a name="output_ips"></a> [ips](#output_ips)                            | n/a         |
+
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
 ## Related Projects
@@ -95,7 +97,7 @@ Please use the [issue tracker](https://github.com/JamesWoolfenden/terraform-aws-
 
 ## Copyrights
 
-Copyright © 2019-2021 James Woolfenden
+Copyright © 2019-2022 James Woolfenden
 
 ## License
 
