@@ -1,5 +1,5 @@
-resource "aws_wafregional_rule" "ip_match" {
-  name        = var.ipset["name"]
+resource "aws_wafregional_rule" "eightklimit" {
+  name        = "eightklimit"
   metric_name = var.ipset["name"]
 
   predicate {
