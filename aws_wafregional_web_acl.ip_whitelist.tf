@@ -13,7 +13,7 @@ resource "aws_wafregional_web_acl" "ip_whitelist" {
     }
 
     priority = 1
-    rule_id  = aws_wafregional_rule.ip_match.id
+    rule_id  = aws_wafregional_rule.ipwhitelist.id
     type     = "REGULAR"
   }
 
