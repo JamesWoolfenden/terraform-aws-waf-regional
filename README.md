@@ -103,10 +103,39 @@ resource "aws_iam_policy" "terraform_pike" {
                 "logs:DeleteRetentionPolicy",
                 "logs:DescribeLogGroups",
                 "logs:DisassociateKmsKey",
+                "logs:ListTagsForResource",
                 "logs:ListTagsLogGroup",
                 "logs:PutRetentionPolicy"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "waf-regional:CreateIPSet",
+                "waf-regional:CreateRule",
+                "waf-regional:CreateWebACL",
+                "waf-regional:DeleteIPSet",
+                "waf-regional:DeleteRule",
+                "waf-regional:DeleteWebACL",
+                "waf-regional:GetChangeToken",
+                "waf-regional:GetIPSet",
+                "waf-regional:GetLoggingConfiguration",
+                "waf-regional:GetRule",
+                "waf-regional:GetWebACL",
+                "waf-regional:ListTagsForResource",
+                "waf-regional:TagResource",
+                "waf-regional:UntagResource",
+                "waf-regional:UpdateIPSet",
+                "waf-regional:UpdateRule",
+                "waf-regional:UpdateWebACL"
+            ],
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
