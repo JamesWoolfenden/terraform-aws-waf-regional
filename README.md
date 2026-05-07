@@ -1,13 +1,11 @@
 # terraform-aws-waf-regional
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-waf-regional/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-waf-regional)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-waf-regional/workflows/Verify/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-waf-regional)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-waf-regional.svg)](https://github.com/JamesWoolfenden/terraform-aws-waf-regional/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-waf-regional.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-waf-regional/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/JamesWoolfenden/terraform-aws-waf-regional/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-waf-regional&benchmark=CIS+AWS+V1.2)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-aws-waf-regional/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-waf-regional&benchmark=INFRASTRUCTURE+SECURITY)
 
 Terraform module - creates regional WAF
 
@@ -40,7 +38,7 @@ No requirements.
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
@@ -50,7 +48,7 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_cloudwatch_log_group.wafexample](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_log_group) | resource |
 | [aws_wafregional_ipset.ips](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_ipset) | resource |
 | [aws_wafregional_rule.eightklimit](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/wafregional_rule) | resource |
@@ -61,7 +59,7 @@ No modules.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_acl_name"></a> [acl\_name](#input\_acl\_name) | n/a | `string` | `"IPWhiteListWebACL"` | no |
 | <a name="input_common_tags"></a> [common\_tags](#input\_common\_tags) | Implement the common\_tags scheme | `map(any)` | n/a | yes |
 | <a name="input_ipset"></a> [ipset](#input\_ipset) | Complex object to describe and populate ipset | `any` | n/a | yes |
@@ -71,7 +69,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_ip_match"></a> [ip\_match](#output\_ip\_match) | n/a |
 | <a name="output_ip_whitelist"></a> [ip\_whitelist](#output\_ip\_whitelist) | n/a |
 | <a name="output_ips"></a> [ips](#output\_ips) | n/a |
